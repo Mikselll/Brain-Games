@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 
 const numberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-const game = () => {
+const gameEven = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
@@ -34,4 +34,4 @@ const game = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default game;
+export default gameEven;
