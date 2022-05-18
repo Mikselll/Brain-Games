@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Mikselll/frontend-project-lvl1#readme",
   "bin": {
+    "brain-gcd": "bin/brain-gcd.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-even": "bin/brain-even.js",
     "brain-games": "bin/brain-games.js"

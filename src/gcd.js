@@ -2,33 +2,26 @@ import readlineSync from 'readline-sync';
 
 const numberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
-const rightAnswer = (a, b, operator) => {
-  if (operator === '+') {
-    return a + b;
+const rightAnswer = (a, b) => {
+  if (b > 0) {
+    const c = a % b;
+    return rightAnswer(b, c);
   }
-  if (operator === '-') {
-    return a - b;
-  }
-  if (operator === '*') {
-    return a * b;
-  }
-  return NaN;
+  return a;
 };
 
-const gameCalc = () => {
+const gameGcd = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`Hello, ${userName}!`);
-  console.log('What is the result of the expression?');
-  const arrOperators = ['+', '-', '*'];
+  console.log('Find the greatest common divisor of given numbers.');
   const gameRounds = 3;
   for (let i = 0; i < gameRounds; i += 1) {
-    const randomNumber1 = numberGenerator(1, 10);
-    const randomNumber2 = numberGenerator(1, 10);
-    const randomOperator = arrOperators[numberGenerator(0, arrOperators.length - 1)];
-    console.log(`Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`);
+    const randomNumber1 = numberGenerator(1, 50);
+    const randomNumber2 = numberGenerator(1, 50);
+    console.log(`Question: ${randomNumber1} ${randomNumber2}`);
     const userAnswer = readlineSync.question('You answer: ');
-    const correctAnswer = rightAnswer(randomNumber1, randomNumber2, randomOperator);
+    const correctAnswer = rightAnswer(randomNumber1, randomNumber2);
     if (Number(userAnswer) === correctAnswer) {
       console.log('Correct!');
     } else {
@@ -40,4 +33,4 @@ const gameCalc = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default gameCalc;
+export default gameGcd;
