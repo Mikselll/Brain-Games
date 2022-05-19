@@ -17,7 +17,7 @@ const rightAnswer = (a, b, operator) => {
 
 const gameCalc = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('What is the result of the expression?');
   const arrOperators = ['+', '-', '*'];
@@ -32,7 +32,7 @@ const gameCalc = () => {
     if (Number(userAnswer) === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }

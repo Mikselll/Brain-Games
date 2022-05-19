@@ -1,5 +1,7 @@
 install:
 	npm ci
+brain-prime:
+	node bin/brain-prime.js
 brain-gcd:
 	node bin/brain-gcd.js
 brain-calc:
