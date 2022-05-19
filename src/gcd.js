@@ -12,7 +12,7 @@ const rightAnswer = (a, b) => {
 
 const gameGcd = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = readlineSync.question('May I have your name?');
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log('Find the greatest common divisor of given numbers.');
   const gameRounds = 3;

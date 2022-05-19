@@ -13,7 +13,7 @@ const gameEven = () => {
     console.log(`Question: ${randomNumber}`);
     const userAnswer = readlineSync.question('You answer: ');
     if (randomNumber % 2 === 0) {
-      if (userAnswer === "yes") {
+      if (userAnswer === 'yes') {
         console.log('Correct!');
       } else {
         console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'.`);
@@ -22,7 +22,7 @@ const gameEven = () => {
       }
     }
     if (randomNumber % 2 !== 0) {
-      if (userAnswer === "no") {
+      if (userAnswer === 'no') {
         console.log('Correct!');
       } else {
         console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was 'no'.`);
