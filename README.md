@@ -4,4 +4,4 @@
 [![lint](https://github.com/Mikselll/frontend-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/Mikselll/frontend-project-lvl1/actions/workflows/lint.yml)
 [![asciicast](https://asciinema.org/a/pAle0bZUot9SncFIKnATbgu49.svg)](https://asciinema.org/a/pAle0bZUot9SncFIKnATbgu49)
 [![asciicast](https://asciinema.org/a/z5AJz9LizcAcN9lQopCpuVUzY.svg)](https://asciinema.org/a/z5AJz9LizcAcN9lQopCpuVUzY)
-[![asciicast](https://asciinema.org/a/jhs4WzuKRySo4RHVqW2etu0KF.svg)](https://asciinema.org/a/jhs4WzuKRySo4RHVqW2etu0KF)
+[![asciicast](https://asciinema.org/a/JWA5eMwMluFW01AGBt1oWaRN1.svg)](https://asciinema.org/a/JWA5eMwMluFW01AGBt1oWaRN1)
