@@ -3,7 +3,10 @@ import readlineSync from 'readline-sync';
 const numberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const rightAnswer = (n) => {
-  if ((n === 1) || (n === 2)) {
+  if (n === 1) {
+    return 'no';
+  }
+  if (n === 2) {
     return 'yes';
   }
   for (let i = 2; i < n; i += 1) {
