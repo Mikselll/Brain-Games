@@ -26,7 +26,7 @@ const calcStep = () => {
   const gameQuestion = `${firstRandomNumber} ${randomOperator} ${secondRandomNumber}`;
   const rightAnswer = String(getRightAnswer(firstRandomNumber, secondRandomNumber, randomOperator));
   return [gameQuestion, rightAnswer];
-}
+};
 
 const startCalcGame = () => startGame(calcRule, calcStep);
 
