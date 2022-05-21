@@ -16,7 +16,7 @@ const gcdStep = () => {
   const firstRandomNumber = numberGenerator(1, 50);
   const secondRandomNumber = numberGenerator(1, 50);
   const gameQuestion = `${firstRandomNumber} ${secondRandomNumber}`;
-  const rightAnswer = getRightAnswer(firstRandomNumber, secondRandomNumber);
+  const rightAnswer = String(getRightAnswer(firstRandomNumber, secondRandomNumber));
   return [gameQuestion, rightAnswer];
 };
 
