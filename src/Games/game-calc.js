@@ -17,17 +17,17 @@ const getRightAnswer = (a, b, operator) => {
   return NaN;
 };
 
-const calcRules = 'What is the result of the expression?';
+const calcRule = 'What is the result of the expression?';
 
 const calcStep = () => {
-    const firstRandomNumber = numberGenerator(1, 10);
-    const secondRandomNumber = numberGenerator(1, 10);
-    const randomOperator = arrOperators[numberGenerator(0, arrOperators.length - 1)];
-    const gameQuestion = `${firstRandomNumber} ${randomOperator} ${secondRandomNumber}`;
-    const rightAnswer = String(getRightAnswer(firstRandomNumber, secondRandomNumber, randomOperator));
-    return [gameQuestion, rightAnswer];
+  const firstRandomNumber = numberGenerator(1, 10);
+  const secondRandomNumber = numberGenerator(1, 10);
+  const randomOperator = arrOperators[numberGenerator(0, arrOperators.length - 1)];
+  const gameQuestion = `${firstRandomNumber} ${randomOperator} ${secondRandomNumber}`;
+  const rightAnswer = String(getRightAnswer(firstRandomNumber, secondRandomNumber, randomOperator));
+  return [gameQuestion, rightAnswer];
 }
 
-const startCalcGame = () => startGame(calcRules, calcStep);
+const startCalcGame = () => startGame(calcRule, calcStep);
 
 export default startCalcGame;
