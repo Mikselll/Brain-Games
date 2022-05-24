@@ -1,6 +1,5 @@
 import startGame from '../index.js';
-
-const numberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import numberGenerator from '../utils.js';
 
 const checkEven = (num) => num % 2 === 0;
 
