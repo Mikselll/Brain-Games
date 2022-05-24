@@ -3,24 +3,24 @@ import numberGenerator from '../utils.js';
 
 const getRightAnswer = (num) => {
   if (num === 1) {
-    return 'no';
+    return false;
   }
   if (num === 2) {
-    return 'yes';
+    return true;
   }
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const primeRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const primeStep = () => {
   const questionNumber = numberGenerator(1, 100);
-  const rightAnswer = getRightAnswer(questionNumber);
+  const rightAnswer = getRightAnswer(questionNumber) ? 'yes' : 'no';
   return [questionNumber, rightAnswer];
 };
 
