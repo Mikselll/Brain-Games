@@ -1,7 +1,7 @@
 import startGame from '../index.js';
 import numberGenerator from '../utils.js';
 
-const getRightAnswer = (num) => {
+const isPrime = (num) => {
   if (num === 1) {
     return false;
   }
@@ -20,7 +20,7 @@ const primeRule = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 const primeStep = () => {
   const questionNumber = numberGenerator(1, 100);
-  const rightAnswer = getRightAnswer(questionNumber) ? 'yes' : 'no';
+  const rightAnswer = isPrime(questionNumber) ? 'yes' : 'no';
   return [questionNumber, rightAnswer];
 };
 
